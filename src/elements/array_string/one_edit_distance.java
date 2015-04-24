@@ -12,7 +12,7 @@ public class Solution {
         
         if (l2 - l1 > 1) return false;
         
-        if (l1 == l2) {
+        if (l1 != l2) {
             for (int i = 0; i < l1; i++) {
                 if (s1.charAt(i) != s2.charAt(i))
                     return false;
