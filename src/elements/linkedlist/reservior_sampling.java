@@ -16,7 +16,7 @@ public class ReserviorSampling {
 			} else {
 				// If there is already K elements in the list,
 				// then generate a random number and if it's within [0, k), then replace it.
-				int offset = new Random().nextInt(count);
+				int offset = new Random().nextInt(count + 1);
 				if (offset < K) {
 					res.set(offset, n.val);
 				}
